@@ -16,6 +16,10 @@
 		AC59EB112C8C314900EB7563 /* AlarmAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59EB102C8C314900EB7563 /* AlarmAppTests.swift */; };
 		AC59EB1B2C8C314900EB7563 /* AlarmAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59EB1A2C8C314900EB7563 /* AlarmAppUITests.swift */; };
 		AC59EB1D2C8C314900EB7563 /* AlarmAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59EB1C2C8C314900EB7563 /* AlarmAppUITestsLaunchTests.swift */; };
+		AC59EB2B2C8C327400EB7563 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59EB2A2C8C327400EB7563 /* WatchView.swift */; };
+		AC59EB2D2C8C329D00EB7563 /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59EB2C2C8C329D00EB7563 /* AlarmListView.swift */; };
+		AC59EB2F2C8C32B000EB7563 /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59EB2E2C8C32B000EB7563 /* AlarmListCell.swift */; };
+		AC59EB312C8C32CE00EB7563 /* NoAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59EB302C8C32CE00EB7563 /* NoAlarmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		AC59EB162C8C314900EB7563 /* AlarmAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC59EB1A2C8C314900EB7563 /* AlarmAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAppUITests.swift; sourceTree = "<group>"; };
 		AC59EB1C2C8C314900EB7563 /* AlarmAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC59EB2A2C8C327400EB7563 /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
+		AC59EB2C2C8C329D00EB7563 /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		AC59EB2E2C8C32B000EB7563 /* AlarmListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
+		AC59EB302C8C32CE00EB7563 /* NoAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAlarmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,8 @@
 		AC59EAF92C8C314700EB7563 /* AlarmApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC59EB362C8C340600EB7563 /* Model */,
+				AC59EB292C8C324100EB7563 /* Views */,
 				AC59EAFA2C8C314700EB7563 /* AlarmAppApp.swift */,
 				AC59EAFC2C8C314700EB7563 /* ContentView.swift */,
 				AC59EAFE2C8C314900EB7563 /* Assets.xcassets */,
@@ -131,6 +141,24 @@
 				AC59EB1C2C8C314900EB7563 /* AlarmAppUITestsLaunchTests.swift */,
 			);
 			path = AlarmAppUITests;
+			sourceTree = "<group>";
+		};
+		AC59EB292C8C324100EB7563 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC59EB2A2C8C327400EB7563 /* WatchView.swift */,
+				AC59EB2C2C8C329D00EB7563 /* AlarmListView.swift */,
+				AC59EB2E2C8C32B000EB7563 /* AlarmListCell.swift */,
+				AC59EB302C8C32CE00EB7563 /* NoAlarmView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC59EB362C8C340600EB7563 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC59EB042C8C314900EB7563 /* Persistence.swift in Sources */,
+				AC59EB312C8C32CE00EB7563 /* NoAlarmView.swift in Sources */,
 				AC59EAFD2C8C314700EB7563 /* ContentView.swift in Sources */,
+				AC59EB2F2C8C32B000EB7563 /* AlarmListCell.swift in Sources */,
+				AC59EB2D2C8C329D00EB7563 /* AlarmListView.swift in Sources */,
+				AC59EB2B2C8C327400EB7563 /* WatchView.swift in Sources */,
 				AC59EAFB2C8C314700EB7563 /* AlarmAppApp.swift in Sources */,
 				AC59EB072C8C314900EB7563 /* AlarmApp.xcdatamodeld in Sources */,
 			);
@@ -430,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmApp/Preview Content\"";
+				DEVELOPMENT_TEAM = LU893QGJWJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -458,6 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmApp/Preview Content\"";
+				DEVELOPMENT_TEAM = LU893QGJWJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
